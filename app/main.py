@@ -6,6 +6,7 @@ from typing import AsyncGenerator
 
 from fastapi import FastAPI
 
+from app.api.documents import router as documents_router
 from app.core.config import settings
 
 # ---------------------------------------------------------------------------
@@ -38,6 +39,12 @@ app = FastAPI(
     version="0.1.0",
     lifespan=lifespan,
 )
+
+
+# ---------------------------------------------------------------------------
+# Routers
+# ---------------------------------------------------------------------------
+app.include_router(documents_router)
 
 
 # ---------------------------------------------------------------------------

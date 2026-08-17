@@ -17,8 +17,9 @@ __pycache__/
 .pytest_cache/
 .mypy_cache/
 
-# Uploaded/generated files
-data/uploads/
+# Uploaded/generated files – keep directory structure, ignore content
+data/uploads/*
+!data/uploads/.gitkeep
 storage/
 
 # Model/cache files
