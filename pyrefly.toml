@@ -1,0 +1,7 @@
+project-includes = ["**/*.py"]
+
+search-path = ["."]
+
+python-platform = "linux"
+python-version = "3.12"
+python-interpreter-path = ".venv/bin/python"

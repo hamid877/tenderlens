@@ -22,6 +22,9 @@ data/uploads/*
 !data/uploads/.gitkeep
 storage/
 
+# Vector store – generated files
+data/vector_store/
+
 # Model/cache files
 .cache/
 
