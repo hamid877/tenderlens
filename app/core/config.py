@@ -10,5 +10,11 @@ class Settings:
     debug: bool = os.getenv("DEBUG", "false").lower() == "true"
     log_level: str = os.getenv("LOG_LEVEL", "INFO").upper()
 
+    # Milestone 9: Hosted LLM Provider
+    # openai_api_key is intentionally not assigned a default so that missing
+    # configuration is caught at provider construction time rather than here.
+    openai_api_key: str = os.getenv("OPENAI_API_KEY", "")
+    openai_model: str = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
+
 
 settings = Settings()
